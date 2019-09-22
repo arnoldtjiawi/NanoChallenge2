@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReflectionCell" id="gTV-IL-0wX" customClass="ReflectionCell" customModule="NanoChallenge2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="171"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="171"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZV-Iq-19t">
+                        <rect key="frame" x="0.0" y="0.0" width="470" height="171"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vw9-mG-sVM">
+                                <rect key="frame" x="20" y="46.5" width="430" height="78"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pu-uw-T6V">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Q7b-14-WyP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-sd-C0B">
+                                        <rect key="frame" x="0.0" y="48" width="430" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="w5Z-xB-3yD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39215686274509803" green="0.73725490196078436" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vw9-mG-sVM" firstAttribute="leading" secondItem="wZV-Iq-19t" secondAttribute="leading" constant="20" id="ZDF-6m-XWz"/>
+                            <constraint firstAttribute="trailing" secondItem="Vw9-mG-sVM" secondAttribute="trailing" constant="20" id="bxf-qi-JRB"/>
+                            <constraint firstItem="Vw9-mG-sVM" firstAttribute="centerY" secondItem="wZV-Iq-19t" secondAttribute="centerY" id="pRK-gn-qoJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wZV-Iq-19t" secondAttribute="bottom" id="ISq-WU-jXq"/>
+                <constraint firstItem="wZV-Iq-19t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p4f-x2-c0o"/>
+                <constraint firstAttribute="trailing" secondItem="wZV-Iq-19t" secondAttribute="trailing" id="pid-tb-clr"/>
+                <constraint firstItem="wZV-Iq-19t" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qjx-6z-nPn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="470" height="171"/>
+            <connections>
+                <outlet property="reflectionDateLabel" destination="dhz-sd-C0B" id="Qem-4z-ig3"/>
+                <outlet property="reflectionTitleLabel" destination="8pu-uw-T6V" id="77X-yW-u2p"/>
+            </connections>
+            <point key="canvasLocation" x="442.02898550724643" y="193.19196428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
